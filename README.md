@@ -19,7 +19,7 @@ https://neeraj450107.github.io/To_Do_List.github.io/
 
 ## Demo
 
-
+![Image](https://github.com/user-attachments/assets/f1c65a6f-a704-4fef-8a57-b98820d673da)
 
 
 ## Technologies Used
@@ -30,7 +30,9 @@ https://neeraj450107.github.io/To_Do_List.github.io/
 
 ## Screenshots
 
-
+![Image](https://github.com/user-attachments/assets/462c4693-898f-4618-b6c7-5f97c44fc8aa)
+![Image](https://github.com/user-attachments/assets/b6bb2d06-e102-44f9-a3b2-2aea2b127831)
+![Image](https://github.com/user-attachments/assets/5c7d2c19-1d12-4618-b428-654f0ae36e1c)
 
 
 ## License
