@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container{
+    background: linear-gradient(300deg  , rgb(71, 105, 155) , rgb(29, 120, 185) , rgb(17, 17, 214));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolist{
+    width: 500px;
+    /* height: 500px; */
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    
+    
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-top: 15px;
+    position: relative;
+    margin-left: -50px;
+   
+    
+}
+
+h1 img{
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
+    
+    position: absolute;
+    
+
+}
+.list{
+    margin: 30px 20px;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid rgb(58, 40, 194);
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgb(100, 105, 110);
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    position: relative;
+    
+}
+
+.list input{
+    flex: 1;
+    border: none;
+    background: whitesmoke;
+    font-size: 18px;
+    outline: none;
+    padding: 0px;
+    
+
+}
+
+#addBtn{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: orangered;
+    padding: 15px 39px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -0px;
+    margin-left: 73%;
+    
+    
+    
+}
+#addBtn:hover{
+    box-shadow: 1px 0px 10px  rgb(255, 255, 255);
+    font-size: 21px;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    
+}
+
+ul li::before{
+    content: '';
+    background-image: url(unchecked.png);
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    /* border-radius: 50%; */
+    background-size: cover;
+    /* background-position: start; */
+    margin: 3px -35px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(130, 206, 159);
+    
+    
+    
+}
+
+ul li.checked::before{
+    background-image: url(checked.jpg);
+    border: 1px solid rgb(0, 255, 34);
+    border-radius: 50%;
+}
+
+ul li span{
+    text-align: center;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+}
+
+
+ul li span:hover{
+    /* background-color: rgb(255, 255, 255); */
+    box-shadow: 3px 3px  10px rgb(255, 255, 255);
+    color: rgb(255, 191, 0);
+    font-size:27px ;
+    backdrop-filter: blur(10px);
+    
+    
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+        height: 90vh;
+
+    }
+    
+
+   .todolist{
+      width: 360px;
+      /* margin-top: -300px; */
+      
+      
+    }
+
+    input{
+        width: 100%;
+    }
+    #addBtn{
+        position: absolute;
+        margin-left: 200px;
+        padding:17px 38px;
+    }
+
+} 
